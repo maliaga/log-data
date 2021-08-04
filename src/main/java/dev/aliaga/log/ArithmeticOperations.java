@@ -1,15 +1,16 @@
 package dev.aliaga.log;
 
-public class Operations {
+public class ArithmeticOperations {
 
     /**
      * Subtract without subtract
+     *
      * @param a number
      * @param b number
      * @return result
      */
     public static int noSubtract(int a,
-                          int b) {
+                                 int b) {
         int value = 0;
         int min = a;
         int max = b;
@@ -29,11 +30,13 @@ public class Operations {
 
     /**
      * Multiply without multiply
+     *
      * @param a number
      * @param b number
      * @return result
      */
-    public static int multiply(int a, int b) {
+    public static int multiply(int a,
+                               int b) {
         int value = 0;
         for (int i = 0; i < b; i++) {
             value += a;
@@ -43,15 +46,18 @@ public class Operations {
 
     /**
      * Divide without divide
+     *
      * @param a number
      * @param b number
      * @return result
      */
-    public static int divide(int a, int b) {
-        if (a == 0 || b > a) return 0;
+    public static int divide(int a,
+                             int b) {
+        if (a == 0 || b > a)
+            return 0;
         int value = 0;
         while (a >= b) {
-            a-=b;
+            a -= b;
             value++;
         }
         return value;
@@ -59,15 +65,32 @@ public class Operations {
 
     /**
      * Pow without pow
+     *
      * @param a number
      * @param b number
      * @return result
      */
-    public static int pow(int a, int b) {
-        if (b == 0) return a;
+    public static int pow(int a,
+                          int b) {
+        if (b == 0)
+            return a;
         int value = a;
         for (int i = 1; i < b; i++) {
-            value*=a;
+            value *= a;
+        }
+        return value;
+    }
+
+    /**
+     * Factorial
+     *
+     * @param a number
+     * @return result
+     */
+    public static int factorial(int a) {
+        int value = 1;
+        for (int i = 1; i <= a; i++) {
+            value *= i;
         }
         return value;
     }
