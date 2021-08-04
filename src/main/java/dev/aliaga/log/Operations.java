@@ -2,6 +2,12 @@ package dev.aliaga.log;
 
 public class Operations {
 
+    /**
+     * Subtract without subtract
+     * @param a number
+     * @param b number
+     * @return result
+     */
     public static int noSubtract(int a,
                           int b) {
         int value = 0;
@@ -31,6 +37,22 @@ public class Operations {
         int value = 0;
         for (int i = 0; i < b; i++) {
             value += a;
+        }
+        return value;
+    }
+
+    /**
+     * Divide without divide
+     * @param a number
+     * @param b number
+     * @return result
+     */
+    public static int divide(int a, int b) {
+        if (a == 0 || b > a) return 0;
+        int value = 0;
+        while (a >= b) {
+            a-=b;
+            value++;
         }
         return value;
     }

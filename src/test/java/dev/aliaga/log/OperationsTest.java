@@ -24,4 +24,15 @@ class OperationsTest {
         assertEquals(100, Operations.multiply(50, 2));
         assertEquals(100, Operations.multiply(25, 4));
     }
+
+    @Test
+    void divide() {
+        assertEquals(2, Operations.divide(5, 2));
+        assertEquals(7, Operations.divide(15, 2));
+        assertEquals(4, Operations.divide(20, 5));
+        assertEquals(25, Operations.divide(50, 2));
+        assertEquals(6, Operations.divide(25, 4));
+        assertEquals(0, Operations.divide(2, 4));
+        assertEquals(0, Operations.divide(0, 4));
+    }
 }
