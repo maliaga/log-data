@@ -35,4 +35,13 @@ class OperationsTest {
         assertEquals(0, Operations.divide(2, 4));
         assertEquals(0, Operations.divide(0, 4));
     }
+
+    @Test
+    void pow() {
+        assertEquals(8, Operations.pow(2, 3));
+        assertEquals(9, Operations.pow(3, 2));
+        assertEquals(2197, Operations.pow(13,3));
+        assertEquals(13, Operations.pow(13,0));
+        assertEquals(65536, Operations.pow(16,4));
+    }
 }

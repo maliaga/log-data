@@ -56,4 +56,19 @@ public class Operations {
         }
         return value;
     }
+
+    /**
+     * Pow without pow
+     * @param a number
+     * @param b number
+     * @return result
+     */
+    public static int pow(int a, int b) {
+        if (b == 0) return a;
+        int value = a;
+        for (int i = 1; i < b; i++) {
+            value*=a;
+        }
+        return value;
+    }
 }
