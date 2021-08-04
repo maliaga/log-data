@@ -30,4 +30,18 @@ class ArrayLogTest {
         Assertions.assertArrayEquals(new int[]{76, 75, 74, 73, 72, 71},
                 ArrayLog.reverseArray(new int[]{71, 72, 73, 74, 75, 76}));
     }
+
+    @Test
+    void lowerValue() {
+        Assertions.assertEquals(2, ArrayLog.lowestNumber(new int[]{4,7,9,2,10}));
+        Assertions.assertEquals(20, ArrayLog.lowestNumber(new int[]{40,75,95,20,100}));
+        Assertions.assertEquals(4, ArrayLog.lowestNumber(new int[]{4,70,95,25,10}));
+    }
+
+    @Test
+    void highestValue() {
+        Assertions.assertEquals(10, ArrayLog.highestNumber(new int[]{4,7,9,2,10}));
+        Assertions.assertEquals(100, ArrayLog.highestNumber(new int[]{40,75,95,20,100}));
+        Assertions.assertEquals(95, ArrayLog.highestNumber(new int[]{4,70,95,25,10}));
+    }
 }

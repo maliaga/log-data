@@ -28,4 +28,28 @@ public class ArrayLog {
         }
         return reverse;
     }
+
+    public static int lowestNumber(int[] array) {
+        if (array.length == 0) return 0;
+
+        int minor = array[0];
+
+        for (int j : array) {
+            if (minor > j)
+                minor = j;
+        }
+        return minor;
+    }
+
+    public static int highestNumber(int[] array) {
+        if (array.length == 0) return 0;
+
+        int minor = array[0];
+
+        for (int j : array) {
+            if (minor < j)
+                minor = j;
+        }
+        return minor;
+    }
 }
