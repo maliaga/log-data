@@ -24,4 +24,13 @@ class NumberLogTest {
         assertTrue(NumberLog.friendsNumbers(1184, 1210));
         assertFalse(NumberLog.friendsNumbers(6, 28));
     }
+
+    @Test
+    void guayNumber() {
+        assertFalse(NumberLog.guayNumber(7));
+        assertFalse(NumberLog.guayNumber(8));
+        assertFalse(NumberLog.guayNumber(9));
+        assertTrue(NumberLog.guayNumber(10));
+        assertTrue(NumberLog.guayNumber(15));
+    }
 }
