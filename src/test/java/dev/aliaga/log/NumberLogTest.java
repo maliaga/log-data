@@ -17,4 +17,11 @@ class NumberLogTest {
         assertFalse(NumberLog.perfectNumber(2828));
         assertFalse(NumberLog.perfectNumber(497));
     }
+
+    @Test
+    void friendsNumbers() {
+        assertTrue(NumberLog.friendsNumbers(220, 284));
+        assertTrue(NumberLog.friendsNumbers(1184, 1210));
+        assertFalse(NumberLog.friendsNumbers(6, 28));
+    }
 }
