@@ -3,12 +3,17 @@ package dev.aliaga.log;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class StringLogTest {
 
     @Test
     void manyTimes() {
         Assertions.assertEquals(3, StringLog.manyTimes("hjgajhgjhgajgjga", 'a'));
+    }
+
+    @Test
+    void palindrome() {
+        Assertions.assertTrue(StringLog.palindrome("ana"));
+        Assertions.assertTrue(StringLog.palindrome("asfggfsa"));
+        Assertions.assertFalse(StringLog.palindrome("asfgtgfsa"));
     }
 }
