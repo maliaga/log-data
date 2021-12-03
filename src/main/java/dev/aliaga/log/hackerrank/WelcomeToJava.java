@@ -2,7 +2,7 @@ package dev.aliaga.log.hackerrank;
 
 import java.util.Scanner;
 
-public class Main {
+public class WelcomeToJava {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("================================");
@@ -19,7 +19,7 @@ public class Main {
         int loop = 15 - value.length();
 
         for (int i = 0; i < loop; i++) {
-            value+=" ";
+            value += " ";
         }
 
         return value;
@@ -29,7 +29,7 @@ public class Main {
         int loop = 3 - value.length();
         String resu = "";
         for (int i = 0; i < loop; i++) {
-            resu+="0";
+            resu += "0";
         }
         return resu + value;
     }
