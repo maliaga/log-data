@@ -12,7 +12,7 @@ class StringLogTest {
 
     @Test
     void palindrome() {
-        Assertions.assertTrue(StringLog.palindrome("ana"));
+        Assertions.assertTrue(StringLog.palindrome("anna"));
         Assertions.assertTrue(StringLog.palindrome("asfggfsa"));
         Assertions.assertFalse(StringLog.palindrome("asfgtgfsa"));
     }
