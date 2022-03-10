@@ -20,6 +20,15 @@ public class RecursionMain {
         return num;
     }
 
+    public static int noSubtractRecursion(int a, int b) {
+        int value = 0;
+        if (a > b) {
+            value++;
+            value+=noSubtractRecursion(a -1, b);
+        }
+        return value;
+    }
+
     public static void main(String[] args) {
         countDown(10);
         System.out.println(factorialRecursion(5));

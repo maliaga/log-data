@@ -1,5 +1,6 @@
 package dev.aliaga.log.recursions;
 
+import dev.aliaga.log.ArithmeticOperations;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,5 +16,15 @@ class RecursionMainTest {
         assertEquals(362880, RecursionMain.factorialRecursion(9));
         assertEquals(3628800, RecursionMain.factorialRecursion(10));
         assertEquals(39916800, RecursionMain.factorialRecursion(11));
+    }
+
+    @Test
+    void noSubtractRecursion() {
+        assertEquals(4, RecursionMain.noSubtractRecursion(5, 1));
+        assertEquals(3, RecursionMain.noSubtractRecursion(4, 1));
+        assertEquals(5, RecursionMain.noSubtractRecursion(10, 5));
+        assertEquals(4, RecursionMain.noSubtractRecursion(10, 6));
+        assertEquals(50, RecursionMain.noSubtractRecursion(60, 10));
+        assertEquals(50, RecursionMain.noSubtractRecursion(51, 1));
     }
 }
