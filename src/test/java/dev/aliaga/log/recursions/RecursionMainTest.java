@@ -27,4 +27,13 @@ class RecursionMainTest {
         assertEquals(50, RecursionMain.noSubtractRecursion(60, 10));
         assertEquals(50, RecursionMain.noSubtractRecursion(51, 1));
     }
+
+    @Test
+    void multiplyRecursion() {
+        assertEquals(10, RecursionMain.multiplyRecursion(5, 2));
+        assertEquals(30, RecursionMain.multiplyRecursion(15, 2));
+        assertEquals(10, RecursionMain.multiplyRecursion(2, 5));
+        assertEquals(100, RecursionMain.multiplyRecursion(50, 2));
+        assertEquals(100, RecursionMain.multiplyRecursion(25, 4));
+    }
 }

@@ -29,8 +29,19 @@ public class RecursionMain {
         return value;
     }
 
+    public static int multiplyRecursion(int a, int b) {
+        int result = 0;
+        if (b > 0) {
+            result+=a;
+            result+=multiplyRecursion(a, b - 1);
+        }
+
+        return result;
+    }
+
     public static void main(String[] args) {
-        countDown(10);
-        System.out.println(factorialRecursion(5));
+       // countDown(10);
+        //System.out.println(factorialRecursion(5));
+        System.out.println(multiplyRecursion(5,2));
     }
 }
