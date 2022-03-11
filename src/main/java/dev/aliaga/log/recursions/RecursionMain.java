@@ -20,6 +20,11 @@ public class RecursionMain {
         return num;
     }
 
+    public static int factorialRecursionV2(int num) {
+        if (num == 1) return 1;
+        return factorialRecursionV2(num - 1) * num;
+    }
+
     public static int noSubtractRecursion(int a, int b) {
         int value = 0;
         if (a > b) {
@@ -37,11 +42,5 @@ public class RecursionMain {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-       // countDown(10);
-        //System.out.println(factorialRecursion(5));
-        System.out.println(multiplyRecursion(5,2));
     }
 }
